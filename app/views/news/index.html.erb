@@ -1,0 +1,19 @@
+<h1>Index Page</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Text</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @news.each do |el| %>
+        <tr>
+            <td><%= el.title%></td>
+            <td><%= el.text%></td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
